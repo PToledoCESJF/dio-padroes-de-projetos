@@ -1,16 +1,17 @@
 package com.digitalInnovationOne.labpadroesprojetosspring.service;
 
+import com.digitalInnovationOne.labpadroesprojetosspring.model.dto.ClienteDTO;
 import com.digitalInnovationOne.labpadroesprojetosspring.model.entity.Cliente;
 
 public interface ClienteService {
 
-    Iterable<Cliente> buscarTodos();
+    Iterable<ClienteDTO> buscarTodos();
 
-    Cliente buscarPorId(Long id);
+    ClienteDTO buscarPorId(Long id);
 
-    void inserir(Cliente cliente);
+    void inserir(ClienteDTO clienteDTO);
 
-    void atualizar(Long id, Cliente cliente);
+    void atualizar(Long id, ClienteDTO clienteDTO);
 
     void deletar(Long id);
 }
