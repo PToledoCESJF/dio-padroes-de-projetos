@@ -1,5 +1,6 @@
 package com.digitalInnovationOne.labpadroesprojetosspring.model.dto;
 
+import com.digitalInnovationOne.labpadroesprojetosspring.model.entity.Endereco;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -23,6 +24,6 @@ public class ClienteDTO {
 
     @Valid
     @NotEmpty
-    private EnderecoDTO enderecoDTO;
+    private Endereco endereco;
 
 }
