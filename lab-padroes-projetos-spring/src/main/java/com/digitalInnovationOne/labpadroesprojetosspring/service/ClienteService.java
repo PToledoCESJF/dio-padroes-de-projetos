@@ -1,17 +1,20 @@
 package com.digitalInnovationOne.labpadroesprojetosspring.service;
 
+import com.digitalInnovationOne.labpadroesprojetosspring.controller.exception.ClienteNotFoundException;
 import com.digitalInnovationOne.labpadroesprojetosspring.model.dto.ClienteDTO;
-import com.digitalInnovationOne.labpadroesprojetosspring.model.entity.Cliente;
+import com.digitalInnovationOne.labpadroesprojetosspring.model.dto.response.MessageResponseDTO;
+
+import java.util.List;
 
 public interface ClienteService {
 
-    Iterable<ClienteDTO> buscarTodos();
+    List<ClienteDTO> buscarTodos();
 
-    ClienteDTO buscarPorId(Long id);
+    ClienteDTO buscarPorId(Long id) throws ClienteNotFoundException;
 
-    void inserir(ClienteDTO clienteDTO);
+    MessageResponseDTO inserir(ClienteDTO clienteDTO);
 
-    void atualizar(Long id, ClienteDTO clienteDTO);
+    MessageResponseDTO atualizar(Long id, ClienteDTO clienteDTO)  throws ClienteNotFoundException;
 
-    void deletar(Long id);
+    void deletar(Long id)  throws ClienteNotFoundException;
 }
