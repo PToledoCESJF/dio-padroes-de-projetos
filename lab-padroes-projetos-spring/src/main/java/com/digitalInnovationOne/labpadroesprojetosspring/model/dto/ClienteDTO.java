@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 
 @Data
 @Builder
@@ -17,6 +18,7 @@ public class ClienteDTO {
     private Long id;
 
     @NotEmpty
+    @Size(min = 3, max = 100)
     private String nome;
 
     @Valid
