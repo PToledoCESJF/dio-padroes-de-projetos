@@ -11,7 +11,7 @@ Este projeto explorou os seguntes padrões:
 - Strategy/Repository
 - Facade 
 ##
-Este projeto faz parte do treinamento de Java com [Spring Boot](https://spring.io/) da [**Digital Innovation One**](https://digitalinnovationone.com.br) e ministrado por **Venilton FalvoJr**.
+O projeto faz parte do treinamento de Java com [Spring Boot](https://spring.io/) da [**Digital Innovation One**](https://digitalinnovation.one) e ministrado por **Venilton FalvoJr**.
 Foi desenvolvido um pequeno sistema para o gerenciamento de clientes e seus endereços.
 O sistema faz o consumo a API do [ViaCEP](https://viacep.com.br) para gerenciar um endereço a partir do CEP informado. 
 
@@ -26,14 +26,14 @@ Foram necessários os seguintes pré-requisitos para o desenvolvimento e version
 
 As seguintes dependências foram selecionadas via [Spring Initializr](https://start.spring.io/):
 - Spring Web
-- Spring Data JPA
+- [Spring Data JPA](https://spring.io/projects/spring-data-jpa)
 - [H2 Database](https://www.h2database.com/html/main.html)
 - [OpenFeign](https://spring.io/projects/spring-cloud-openfeign)
-- [Lombok]((https://projectlombok.org/))
+- [Lombok](https://projectlombok.org)
 
 As demais dependências foram adicionadas manualmente, são elas:
 - [Openapi-ui](https://swagger.io/tools/swagger-ui/)
-- [Mapstruct]((https://mapstruct.org/))
+- [Mapstruct](https://mapstruct.org)
 ##
 
 Para clonar o projeto no terminal, cole o seguinte comando:
